@@ -9,6 +9,10 @@
     box-sizing: border-box;
 }
 
+*:focus {
+    outline: none;
+}
+
 body {
     background-color: black;
     font-family: 'Times New Roman', Times, serif;
@@ -33,20 +37,35 @@ body {
     background-size: cover;
 }
 
-.logo-background {
-    background-color: black;
+.logo {
+    background-color: rgba(0, 0, 0, 0.5);
     width: 35vw;
     height: 20vh;
     margin-top: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.logo {
-    display: flex;
+.logo img {
+    height: 18vh;
+    width: auto;
 }
+
+.logo h1 {
+    font-size: 8.0rem;
+}
+
 
 .image-source {
     color: white;
-    display: flex;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 85%;
+}
+
+.image-source a {
+    color: white;
 }
 
 .form-section {
@@ -70,6 +89,7 @@ body {
     height: 30vh;
     background-color: white;
     padding-left: 5%;
+    box-shadow: 2px 3px #E5E7EB;
 }
 
 .middle h2 {
@@ -90,6 +110,14 @@ body {
     height: 30px;
     background-color: #fafafa;
     border: 1px solid #E5E7EB
+}
+
+input:focus {
+    border: 1px solid blue;
+}
+
+input:invalid {
+    border: 1px solid red;
 }
 
 .left-form, .right-form {
@@ -115,6 +143,7 @@ body {
     font-weight: bold;
     margin-top: 3%;
     margin-bottom: 3%;
+    box-shadow: 2px 3px #E5E7EB;
 }
 
 .footer a {
